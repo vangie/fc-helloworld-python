@@ -1,6 +1,6 @@
 ## 应用简介
 
-这是一个 Python 结合 Http Trigger 的 Helloworld 示例
+这是一个 Python 结合 Http Trigger 的 Helloworld 示例。
 
 ![helloworld](https://yqfile.alicdn.com/ca34a83d0fc289dc52a761dc42fda923b2b071d8.png)
 
