@@ -18,3 +18,21 @@ Resources:
             AuthType: ANONYMOUS
             Methods:
               - GET
+Outputs:
+  HttpTriggerEndpoint:
+    Value:
+      'Fn::Join':
+        - ''
+        - - 'https://'
+          - Ref: ALIYUN::AccountId
+          - '.'
+          - Ref: ALIYUN::Region
+          - '.fc.aliyuncs.com/2016-08-15/proxy/'
+          - 'Fn::GetAtt':
+            - GreetingService
+            - ServiceName
+          - '/'
+          - 'Fn::GetAtt':
+            - GreetingFunction
+            - FunctionName
+          - '/'
